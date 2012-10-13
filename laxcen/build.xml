@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:ivy="antlib:org.apache.ivy.ant" name="project" default="resolve">
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="laxcen" default="resolve">
 	<property file="build.properties"></property>
 	
 	<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant"></taskdef>
@@ -10,7 +10,14 @@
 	</target>
 	
 	<target name="resolve">
+	    
 		<ivy:settings file="ivy-settings.xml"/>
 		<ivy:retrieve/>
+		
+		<delete includeemptydirs="true">
+    		<fileset dir="${ivy.lib.dir}" includes="servlet-api-*.jar" defaultexcludes="false"/>
+    		<fileset dir="${ivy.lib.dir}" includes="el-api-*.jar" defaultexcludes="false"/>
+    		<fileset dir="${ivy.lib.dir}" includes="jsp-api-*.jar" defaultexcludes="false"/>
+  		</delete>
 	</target>
 </project>
