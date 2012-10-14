@@ -36,7 +36,18 @@
 			</tr>
 		</table>
 	</div>
-	<div class="poster"></div>
+	<div class="poster">
+		<ul class="slider">
+			<li><img src="img/poster1.jpg" height="300px" width="100%"/></li>
+			<li><img src="img/poster2.jpg" height="300px" width="100%"/></li>
+			<li><img src="img/poster3.jpg" height="300px" width="100%"/></li>
+		</ul>
+		<ul class="num">
+    		<li>1</li>
+   		 	<li>2</li>
+   		 	<li>3</li>
+		</ul>	
+	</div>
 	<div class="mainbody">
 		<div class="top_products borderline contentfont">
 			<table>
