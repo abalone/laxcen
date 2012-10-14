@@ -14,6 +14,7 @@
 		<property name="mappings">
 			<props>
 				<prop key="/laxcen.do">laxcenController</prop>
+				<prop key="/siteLanguage.do">siteLanguageController</prop>
 			</props>
 		</property>
 		<property name="interceptors">
@@ -24,8 +25,14 @@
 	</bean>
 
 	<bean id="laxcenService" class="com.laxcen.service.LaxcenService" />
+	<bean id="localeService" class="com.laxcen.service.LocaleService" />
+	
 	<bean id="laxcenController" class="com.laxcen.web.controller.LaxcenController">
 		<property name="laxcenService" ref="laxcenService" />
+	</bean>
+	
+	<bean id="siteLanguageController" class="com.laxcen.web.controller.SiteLanguageController">
+		<property name="localeService" ref="localeService" />
 	</bean>
 	
 	<!-- i18n -->
@@ -34,7 +41,10 @@
 	</bean>
 	
  	 <bean id="localeResolver"
-      class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>
+      class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+ 	     <property name="cookieName" value="clientlanguage"/>
+ 	     <property name="cookieMaxAge" value="100000"/>
+ 	 </bean>
 	
 	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
          <property name="basename" value="classpath:com/laxcen/i18n/messages"/>

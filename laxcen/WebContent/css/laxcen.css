@@ -16,7 +16,7 @@ a{
 }
 
 .head{
-	border-bottom: 1px dotted #666666; margin-bottom: 8px; height: auto
+	border-bottom: 1px dotted #666666; height: auto
 }
 
 .menubar{
@@ -68,7 +68,44 @@ a{
 }
 
 .poster{
-	height:300px; background: url('../img/poster3.jpg') scroll;
+	height:300px; 
+	overflow:hidden; 
+	position:relative;
+}
+
+.slider { 
+	position:absolute;
+	width: 3000px;
+	margin-left:-40px;
+}
+
+.slider li {
+	list-style:none;
+	display:inline;
+	float:left;
+}
+
+.slider img{
+	width:780px; height:300px; display:block;
+}
+
+.num {
+	position: absolute; right:5px; bottom:1px;
+}
+
+.num li{
+	float: left; color: #666666; text-align: center; line-height:16px; width:16px; height:16px; 
+	cursor:pointer;
+	overflow:hidden;
+	margin:3px 1px;
+	border:1px solid #666666;
+	background-color:#FFDD33;
+}
+
+.num li.on{
+	color:#FFDD33;
+	border:1px solid #FFDD33;
+	background-color:#666666;
 }
 
 .mainbody{

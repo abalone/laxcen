@@ -6,12 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lexcen</title>
+<title></title>
 </head>
 <body>
-<h1><c:out value="${laxcen}"/></h1>	
-<spring:message code="text"></spring:message>
-
-<jsp:include page="/lexcen/lexcen.do"></jsp:include>
+	<a href="${language}"><spring:message code="language.choice"></spring:message></a>
 </body>
 </html>
