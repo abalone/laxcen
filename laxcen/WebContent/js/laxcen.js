@@ -68,13 +68,13 @@ $(document).ready(function(){
 						back=true;
 					}
 				}
-			}, 2000);
+			}, 4000);
 	});
 
 	
 	function showImg(i){
 
-		$(".slider").stop(true, false).animate({left: -780*i}, 800);
+		$(".slider").stop(true, false).animate({left: -980*i}, 800);
 		$(".num li").eq(i).addClass("on").siblings().removeClass("on");
 	}
 	

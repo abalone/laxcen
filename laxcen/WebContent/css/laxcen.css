@@ -12,11 +12,11 @@ a{
 }
 
 .frame{
-	width: 780px; align:center; padding: 8px; margin:auto; margin-top:20px; background-color:#FFFFFF
+	width: 980px; align:center; padding: 15px; margin:auto; background-color:#FFFFFF
 }
 
 .head{
-	border-bottom: 1px dotted #666666; height: auto
+	border-bottom: 1px dotted #666666; height: auto; padding-bottom:10px;
 }
 
 .menubar{
@@ -29,7 +29,7 @@ a{
 }
 
 .menubar ul li{
-	display:inline; padding: 5px; margin: 5px 5px 5px 0px; background-color:#FFDD33; border:1px dotted #666666; 
+	display:inline; padding: 10px; margin: 5px 10px 5px 0px; background-color:#FFDD33; border:1px dotted #666666; 
 }
 
 .menubar ul li.menuhighlight{
@@ -68,14 +68,14 @@ a{
 }
 
 .poster{
-	height:300px; 
+	height:470px; 
 	overflow:hidden; 
 	position:relative;
 }
 
 .slider { 
 	position:absolute;
-	width: 3000px;
+	width: 5000px;
 	margin-left:-40px;
 }
 
@@ -86,7 +86,7 @@ a{
 }
 
 .slider img{
-	width:780px; height:300px; display:block;
+	width:980px; height:470px; display:block;
 }
 
 .num {
@@ -109,7 +109,7 @@ a{
 }
 
 .mainbody{
-	margin: 8px 0px 8px 0px; height: auto;
+	margin: 15px 0px 15px 0px; height: auto;
 }
 
 .top_products{
@@ -117,7 +117,7 @@ a{
 }
 
 .product{
-	width:auto; padding: 5px; margin:2px;background-color:#F5F5F5;
+	width:auto; padding: 10px; margin:5px;background-color:#F5F5F5;
 }
 
 .prod_img1{

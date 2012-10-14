@@ -14,40 +14,10 @@
 <body>
 <div class="frame borderline">
 	<div class="head sitefont">
-		<table>
-			<tr>
-				<td width="80%">
-					<div class="menubar">
-						<ul>
-							<li><a href="#">Laxcen</a></li>
-							<li><a href="#">Company</a></li>
-							<li><a href="#">Media</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Solutions</a></li>
-							<li><a href="#">Contact Us</a></li>
-						</ul>
-					</div>
-				</td>
-				<td width="20%">
-					<div class="lang right sitefont">
-						<%-- <a href="#"><spring:message code="language.choice"></spring:message></a> --%>
-						<jsp:include page="/siteLanguage.do"></jsp:include>
-					</div>
-				</td>
-			</tr>
-		</table>
+		<jsp:include page="header.jsp"></jsp:include>
 	</div>
 	<div class="poster">
-		<ul class="slider">
-			<li><img src="img/poster1.jpg" height="300px" width="100%"/></li>
-			<li><img src="img/poster2.jpg" height="300px" width="100%"/></li>
-			<li><img src="img/poster3.jpg" height="300px" width="100%"/></li>
-		</ul>
-		<ul class="num">
-    		<li>1</li>
-   		 	<li>2</li>
-   		 	<li>3</li>
-		</ul>	
+		<jsp:include page="poster.jsp"></jsp:include>
 	</div>
 	<div class="mainbody">
 		<div class="top_products borderline contentfont">
@@ -55,26 +25,17 @@
 				<tr>
 					<td width="33%">
 						<div class="product">
-							<div class="prod_img1">
-								<div class="prod_title">Prod 1<br>prod1 is our product which has feature 1 and feature 2.</div>
-								<div class="more_detail right"><a href="#">&gt;&gt;detail</a></div>
-							</div>
+							<jsp:include page="top_product.jsp"></jsp:include>
 						</div>
 					</td>
 					<td width="33%">
 						<div class="product">
-							<div class="prod_img2">
-								<div class="prod_title">Prod 2<br>prod1 is our product which has feature 1 and feature 2.</div>
-								<div class="more_detail right"><a href="#">&gt;&gt;detail</a></div>
-							</div>
+							<jsp:include page="top_product.jsp"></jsp:include>
 						</div>
 					</td>
 					<td width="33%">
 						<div class="product">
-							<div class="prod_img3">
-								<div class="prod_title">Prod 3<br>prod1 is our product which has feature 1 and feature 2.</div>
-								<div class="more_detail right"><a href="#">&gt;&gt;detail</a></div>
-							</div>
+							<jsp:include page="top_product.jsp"></jsp:include>
 						</div>
 					</td>
 				</tr>
@@ -82,25 +43,7 @@
 		</div>
 	</div>
 	<div class="tail sitefont">
-		<table>
-		 <tr>
-		 	<td>
-		 		<div class="borderright">
-		 			Contact Information: info here
-		 		</div>
-		 	</td>
-		 	<td>
-		 		<div class="borderright">
-		 			Quick Link Here
-		 		</div>
-		 	</td>
-		 	<td>
-		 		<div>
-		 			More things here
-		 		</div>
-		 	</td>
-		 </tr>
-		</table>
+		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 </div>
 </body>
