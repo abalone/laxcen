@@ -9,9 +9,8 @@
 <title>Lexcen</title>
 </head>
 <body>
-<h1><c:out value="${laxcen}"/></h1>	
-<spring:message code="text"></spring:message>
+<h1>header</h1>
 
-<jsp:include page="/lexcen/lexcen.do"></jsp:include>
+<jsp:include page="laxcen.do"></jsp:include>
 </body>
 </html>

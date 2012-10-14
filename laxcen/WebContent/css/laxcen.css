@@ -1,0 +1,151 @@
+body{
+	font: 11px Arial; text-align:center; background: url('../img/bg_pattern.gif') repeat scroll left top
+}
+
+table{
+	width:100%;
+}
+
+a{
+	text-decoration:none;
+	color:#888888;
+}
+
+.frame{
+	width: 780px; align:center; padding: 8px; margin:auto; margin-top:20px; background-color:#FFFFFF
+}
+
+.head{
+	border-bottom: 1px dotted #666666; height: auto
+}
+
+.menubar{
+	text-align:left
+}
+
+.menubar ul{
+	list-style:none;
+	margin-left:-42px;
+}
+
+.menubar ul li{
+	display:inline; padding: 5px; margin: 5px 5px 5px 0px; background-color:#FFDD33; border:1px dotted #666666; 
+}
+
+.menubar ul li.menuhighlight{
+	background-color:#666666; 
+	color:#FFDD33;
+}
+
+
+.menubar ul li a.menuhighlight{
+	background-color:#666666; 
+	color:#FFDD33;
+}
+
+.highlight{
+	border-bottom: 1px dotted #666666;
+}
+
+.borderline{
+	border:1px dotted #666666; 
+}
+
+.borderright{
+	border-right: 1px dotted #666666; 
+}
+
+.right{
+	text-align:right;
+}
+
+.sitefont{
+	color:#888888;
+}
+
+.contentfont{
+	color:#666666;
+}
+
+.poster{
+	height:300px; 
+	overflow:hidden; 
+	position:relative;
+}
+
+.slider { 
+	position:absolute;
+	width: 3000px;
+	margin-left:-40px;
+}
+
+.slider li {
+	list-style:none;
+	display:inline;
+	float:left;
+}
+
+.slider img{
+	width:780px; height:300px; display:block;
+}
+
+.num {
+	position: absolute; right:5px; bottom:1px;
+}
+
+.num li{
+	float: left; color: #666666; text-align: center; line-height:16px; width:16px; height:16px; 
+	cursor:pointer;
+	overflow:hidden;
+	margin:3px 1px;
+	border:1px solid #666666;
+	background-color:#FFDD33;
+}
+
+.num li.on{
+	color:#FFDD33;
+	border:1px solid #FFDD33;
+	background-color:#666666;
+}
+
+.mainbody{
+	margin: 8px 0px 8px 0px; height: auto;
+}
+
+.top_products{
+	width:auto; height:auto; background-color:#D5D5D5; 
+}
+
+.product{
+	width:auto; padding: 5px; margin:2px;background-color:#F5F5F5;
+}
+
+.prod_img1{
+	background: url('../img/product.jpg') no-repeat; height: 84px;
+}
+
+.prod_img2{
+	background: url('../img/product.jpg') no-repeat; height: 84px;
+}
+
+.prod_img3{
+	background: url('../img/product.jpg') no-repeat; height: 84px;
+}
+
+.prod_title{
+	text-align:left; padding-left:100px; line-height:16px; height:78%;
+}
+
+.more_detail{
+	padding-left:100px; margin-top:5px;
+	font-style:italic
+}
+
+.tail{
+	border-top: 1px dotted #666666;
+	height:auto; 
+}
+
+.tail div{
+	margin: 5px; padding:5px; height:60px;
+}

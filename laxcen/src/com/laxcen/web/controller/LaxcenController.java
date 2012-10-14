@@ -22,7 +22,7 @@ public class LaxcenController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
-		return new ModelAndView("laxcen","laxcen",laxcenService.service());
+		return new ModelAndView("index","laxcen",laxcenService.service());
 	}
 
 	public void setLaxcenService(LaxcenService laxcenService) {
