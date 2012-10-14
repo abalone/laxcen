@@ -9,7 +9,7 @@
 <title></title>
 </head>
 <body>
-		<table>
+<table>
 		 <tr>
 		 	<td>
 		 		<div class="borderright">
@@ -27,6 +27,11 @@
 		 		</div>
 		 	</td>
 		 </tr>
-		</table>
+</table>
+<div class="copyright middle">
+	<spring:message code="copyright"></spring:message>
+	<br>
+	<spring:message code="term"></spring:message> | <spring:message code="policy"></spring:message>	
+</div>
 </body>
 </html>

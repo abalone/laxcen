@@ -15,6 +15,7 @@
 			<props>
 				<prop key="/laxcen.do">laxcenController</prop>
 				<prop key="/siteLanguage.do">siteLanguageController</prop>
+				<prop key="/company.do">companyController</prop>
 			</props>
 		</property>
 		<property name="interceptors">
@@ -26,6 +27,7 @@
 
 	<bean id="laxcenService" class="com.laxcen.service.LaxcenService" />
 	<bean id="localeService" class="com.laxcen.service.LocaleService" />
+	<bean id="companyService" class="com.laxcen.service.CompanyService"/>
 	
 	<bean id="laxcenController" class="com.laxcen.web.controller.LaxcenController">
 		<property name="laxcenService" ref="laxcenService" />
@@ -33,6 +35,10 @@
 	
 	<bean id="siteLanguageController" class="com.laxcen.web.controller.SiteLanguageController">
 		<property name="localeService" ref="localeService" />
+	</bean>
+	
+	<bean id="companyController" class="com.laxcen.web.controller.CompanyController">
+		<property name="companyService" ref="companyService" />
 	</bean>
 	
 	<!-- i18n -->

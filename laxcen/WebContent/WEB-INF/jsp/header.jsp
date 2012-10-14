@@ -14,17 +14,17 @@
 				<td width="80%">
 					<div class="menubar">
 						<ul>
-							<li><a href="#"><spring:message code="menu1"></spring:message></a></li>
-							<li><a href="#"><spring:message code="menu2"></spring:message></a></li>
-							<li><a href="#"><spring:message code="menu3"></spring:message></a></li>
-							<li><a href="#"><spring:message code="menu4"></spring:message></a></li>
-							<li><a href="#"><spring:message code="menu5"></spring:message></a></li>
-							<li><a href="#"><spring:message code="menu6"></spring:message></a></li>
+							<a href="laxcen.do"><li><spring:message code="menu1"></spring:message></li></a>
+							<a href="company.do"><li><spring:message code="menu2"></spring:message></li></a>
+							<a href="media.jsp"><li><spring:message code="menu3"></spring:message></li></a>
+							<a href="products.jsp"><li><spring:message code="menu4"></spring:message></li></a>
+							<a href="solutions.jsp"><li><spring:message code="menu5"></spring:message></li></a>
+							<a href="contactus.jsp"><li><spring:message code="menu6"></spring:message></li></a>
 						</ul>
 					</div>
 				</td>
 				<td width="20%">
-					<div class="lang right sitefont">
+					<div class="lang right">
 						<%-- <a href="#"><spring:message code="language.choice"></spring:message></a> --%>
 						<jsp:include page="/siteLanguage.do"></jsp:include>
 					</div>
