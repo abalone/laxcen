@@ -11,7 +11,7 @@
 <body>
 <div class="prod_img1">
 	<div class="prod_title">Prod 1<br>prod1 is our product which has feature 1 and feature 2.</div>
-	<div class="more_detail right"><a href="#">&gt;&gt;detail</a></div>
+	<div class="more_detail right"><a href="#"><spring:message code="more"></spring:message></a></div>
 </div>
 </body>
 </html>

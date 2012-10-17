@@ -11,19 +11,21 @@
 <body>
 <table>
 		 <tr>
-		 	<td>
+		 	<td width="45%">
 		 		<div class="borderright">
 		 			Contact Information: info here
 		 		</div>
 		 	</td>
-		 	<td>
+		 	<td width="25%">
 		 		<div class="borderright">
-		 			Quick Link Here
+		 			<img src="img/social.png"></img>
 		 		</div>
 		 	</td>
-		 	<td>
-		 		<div>
-		 			More things here
+		 	<td width="30%">
+		 		<div class="left">
+		 			<spring:message code="contact.email"></spring:message><a href="mailto:<spring:message code='contact.email.address'></spring:message>?subject=About Laxcen"><spring:message code="contact.email.address"></spring:message></a><br>
+		 			<spring:message code="HK"></spring:message>: <a><spring:message code="contact.phone.hk"></spring:message></a><br>
+		 			<spring:message code="NB"></spring:message>: <a><spring:message code="contact.phone.nb"></spring:message></a><br>
 		 		</div>
 		 	</td>
 		 </tr>

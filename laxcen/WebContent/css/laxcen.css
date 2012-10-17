@@ -54,6 +54,8 @@ a{
 
 .highlight{
 	border-bottom: 1px dotted #AAAAAA;
+	vertical-align:bottom;
+	font-style:italic;
 }
 
 .borderline{
@@ -70,6 +72,10 @@ a{
 
 .middle{
 	text-align: center;
+}
+
+.left{
+	text-align:left;
 }
 
 .sitefont{
@@ -119,7 +125,7 @@ a{
 }
 
 .num li{
-	float: left; color: #666666; text-align: center; line-height:16px; width:16px; height:16px; 
+	float: left; color: #666666; text-align: center; line-height:15px; width:15px; height:15px; 
 	cursor:pointer;
 	overflow:hidden;
 	margin:3px 1px;
@@ -131,6 +137,7 @@ a{
 	color:#FFDD33;
 	border:1px solid #FFDD33;
 	background-color:#666666;
+	line-height:16px; width:16px; height:16px; 
 }
 
 .mainbody{
@@ -162,8 +169,9 @@ a{
 }
 
 .more_detail{
-	padding-left:100px; margin-top:5px;
-	font-style:italic
+	padding-left:100px; 
+	margin-top:5px;
+	font: 11px Tahoma;
 }
 
 .tail{
@@ -172,7 +180,19 @@ a{
 }
 
 .tail div{
-	margin: 5px; padding:5px; height:60px;
+	margin: 5px; padding: 5px; height:60px; line-height:18px;
+}
+
+.tail a {
+	text-decoration:none;
+	color:#FFDD33;
+	margin-bottom:2px;
+	font: 11px Tahoma;
+	font-weight:bold;
+}
+
+.tail div.left{
+	text-align:left;
 }
 
 .tail div.copyright{
