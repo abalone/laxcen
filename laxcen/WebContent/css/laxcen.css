@@ -41,6 +41,11 @@ a{
 	color:#FFDD33;
 }
 
+.menubar ul li.on{
+	background-color:#666666; 
+	color:#FFDD33;
+}
+
 
 .menubar ul li a.menuhighlight{
 	background-color:#666666; 

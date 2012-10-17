@@ -6,6 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>var menuId = <%= (Integer)request.getAttribute("menuId")%>;</script>
 <script src="js/menu.js"></script>
 <title></title>
 </head>
