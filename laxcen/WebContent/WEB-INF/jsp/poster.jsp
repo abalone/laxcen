@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title></title>
+<script src="js/imageslider.js"></script>
 </head>
 <body>
 	<ul class="slider">

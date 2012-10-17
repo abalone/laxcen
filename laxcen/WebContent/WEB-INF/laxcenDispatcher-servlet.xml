@@ -16,6 +16,10 @@
 				<prop key="/laxcen.do">laxcenController</prop>
 				<prop key="/siteLanguage.do">siteLanguageController</prop>
 				<prop key="/company.do">companyController</prop>
+				<prop key="/media.do">mediaController</prop>
+				<prop key="/products.do">productsController</prop>
+				<prop key="/solutions.do">solutionsController</prop>
+				<prop key="/contactus.do">contactController</prop>
 			</props>
 		</property>
 		<property name="interceptors">
@@ -28,6 +32,10 @@
 	<bean id="laxcenService" class="com.laxcen.service.LaxcenService" />
 	<bean id="localeService" class="com.laxcen.service.LocaleService" />
 	<bean id="companyService" class="com.laxcen.service.CompanyService"/>
+	<bean id="mediaService" class="com.laxcen.service.MediaService"/>
+	<bean id="productsService" class="com.laxcen.service.ProductsService"/>
+	<bean id="solutionsService" class="com.laxcen.service.SolutionsService"/>
+	<bean id="contactService" class="com.laxcen.service.ContactService"/>
 	
 	<bean id="laxcenController" class="com.laxcen.web.controller.LaxcenController">
 		<property name="laxcenService" ref="laxcenService" />
@@ -39,6 +47,22 @@
 	
 	<bean id="companyController" class="com.laxcen.web.controller.CompanyController">
 		<property name="companyService" ref="companyService" />
+	</bean>
+	
+	<bean id="mediaController" class="com.laxcen.web.controller.MediaController">
+		<property name="mediaService" ref="mediaService" />
+	</bean>
+	
+	<bean id="productsController" class="com.laxcen.web.controller.ProductsController">
+		<property name="productsService" ref="productsService" />
+	</bean>
+	
+	<bean id="solutionsController" class="com.laxcen.web.controller.SolutionsController">
+		<property name="solutionsService" ref="solutionsService" />
+	</bean>
+	
+	<bean id="contactController" class="com.laxcen.web.controller.ContactController">
+		<property name="contactService" ref="contactService" />
 	</bean>
 	
 	<!-- i18n -->

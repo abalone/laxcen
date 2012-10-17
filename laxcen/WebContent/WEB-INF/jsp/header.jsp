@@ -6,6 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="js/menu.js"></script>
 <title></title>
 </head>
 <body>
@@ -16,10 +17,10 @@
 						<ul>
 							<a href="laxcen.do"><li><spring:message code="menu1"></spring:message></li></a>
 							<a href="company.do"><li><spring:message code="menu2"></spring:message></li></a>
-							<a href="media.jsp"><li><spring:message code="menu3"></spring:message></li></a>
-							<a href="products.jsp"><li><spring:message code="menu4"></spring:message></li></a>
-							<a href="solutions.jsp"><li><spring:message code="menu5"></spring:message></li></a>
-							<a href="contactus.jsp"><li><spring:message code="menu6"></spring:message></li></a>
+							<a href="media.do"><li><spring:message code="menu3"></spring:message></li></a>
+							<a href="products.do"><li><spring:message code="menu4"></spring:message></li></a>
+							<a href="solutions.do"><li><spring:message code="menu5"></spring:message></li></a>
+							<a href="contactus.do"><li><spring:message code="menu6"></spring:message></li></a>
 						</ul>
 					</div>
 				</td>

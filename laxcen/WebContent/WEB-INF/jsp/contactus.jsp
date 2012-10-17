@@ -6,22 +6,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link rel="stylesheet" href="css/company.css"/>
+<link rel="stylesheet" href="css/laxcen.css"/>
 <script src="js/jquery-1.8.2.min.js"></script>
-<script src="js/company.js"></script>
+<script src="js/laxcen.js"></script>
 <title>Laxcen</title>
 </head>
 <body>
-<table>
-	<tr>
-		<td width="30%">
-		</td>
-		<td width="70%">
-			<div class="companycontent contentfont">
-				<jsp:include page="companycontent.jsp"></jsp:include>
-			</div>
-		</td>
-	</tr>
-</table>
+<div class="frame borderline">
+	<div class="head sitefont">
+		<jsp:include page="header.jsp"></jsp:include>
+	</div>
+	<div class="mainbody">
+		<div class="subdiv borderline">
+			<jsp:include page="subtab.jsp"></jsp:include>
+		</div>
+	</div>
+	<div class="tail sitefont">
+		<jsp:include page="footer.jsp"></jsp:include>
+	</div>
+</div>
 </body>
 </html>

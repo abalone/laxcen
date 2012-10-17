@@ -6,13 +6,17 @@ table{
 	width:100%;
 }
 
+tr{
+	vertical-align:top;
+}
+
 a{
 	text-decoration:none;
 	color:#222222;
 }
 
 .frame{
-	width: 980px; align:center; padding: 15px; margin:auto; background: url('../img/dark-grey-tile.png')
+	width: 980px; height: 100%; align:center; padding: 15px; margin:auto; background: url('../img/dark-grey-tile.png');
 }
 
 .head{
@@ -25,11 +29,11 @@ a{
 
 .menubar ul{
 	list-style:none;
-	margin-left:-42px;
+	padding:0px;
 }
 
 .menubar ul li{
-	display:inline; padding: 10px; margin: 5px 10px 5px 0px; background-color:#FFDD33; border:2px solid #BBBBBB; 
+	display:inline; padding: 10px; margin: 5px 10px 5px 0px; background-color:#FFDD33; border:2px solid #BBBBBB;
 }
 
 .menubar ul li.menuhighlight{
@@ -44,7 +48,7 @@ a{
 }
 
 .highlight{
-	border-bottom: 1px dotted #BBBBBB;
+	border-bottom: 1px dotted #AAAAAA;
 }
 
 .borderline{
@@ -64,12 +68,16 @@ a{
 }
 
 .sitefont{
-	color:#BBBBBB;
+	color:#DDDDDD;
 	font-weight:bold;
 }
 
 .contentfont{
 	color:#666666;
+}
+
+.lang {
+	margin-top:5px;	
 }
 
 .lang a {
@@ -167,3 +175,67 @@ a{
 	padding-top:8px;
 	line-height:18px;
 }
+
+
+.subdiv {
+	padding:10px;
+	background-color: #D5D5D5;
+}
+
+.submenu{
+	background-color:#EEEEEE;
+	height:250px;
+	margin-right:5px;
+	border:2px solid #FFFFFF;
+	padding:5px;
+}	
+
+.subcontent{
+	background-color:#FFFFFF;
+	height:413px;
+	margin-left:5px;
+	border:2px solid #EEEEEE;
+	padding:5px;
+}
+
+.randomsector{
+	background-color:#222222;
+	height:140px;
+	margin:10px 5px 0px 0px;
+	border:2px solid #666666;
+	padding:5px;
+	color:#FFDD33; 
+}
+
+.submenubar{
+	padding:0px;
+	margin:5px;
+}
+.submenubar li{
+	list-style:none;
+	width:100%;
+	display:block;
+	background-color:#666666;
+	height:auto;
+	padding:15px 0px 15px 0px;
+	margin-bottom:10px;
+	border-right:2px solid #AAAAAA;
+	border-bottom:2px solid #AAAAAA;
+}
+
+.submenubar a{
+	color:#EEEEEE;
+}
+
+.submenubar li.submenuhighlight{
+	background-color: #FFDD33;
+	color:#666666;
+	border-right:2px solid #888888;
+	border-bottom:2px solid #888888;
+}
+
+.submenubar a.submenuhighlight{
+	background-color: #FFDD33;
+	color:#666666;
+}
+
