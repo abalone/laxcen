@@ -1,5 +1,8 @@
 package com.laxcen.web.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,7 +19,10 @@ public class SolutionsController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
-		return new ModelAndView("solutions","menuId",solutionsService.getMenuId());
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("menuId", solutionsService.getMenuId());
+		model.put("menu", solutionsService.getServiceName());
+		return new ModelAndView("solutions",model);
 	}
 
 	public void setSolutionsService(SolutionsService solutionsService) {

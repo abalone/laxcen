@@ -3,17 +3,21 @@
  */
 package com.laxcen.service;
 
+import com.laxcen.common.Menu;
+
 /**
  * @author abalone
  *
  */
-public class LaxcenService {
+public class LaxcenService implements BasicService{
 	
-	public String service() {
-		return "laxcen page";
-	}
-	
+	@Override	
 	public int getMenuId(){
-		return 1;
+		return Menu.LAXCEN.ordinal();
+	}
+
+	@Override
+	public String getServiceName() {
+		return Menu.LAXCEN.name();
 	}
 }

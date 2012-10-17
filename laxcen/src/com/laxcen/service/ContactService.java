@@ -1,8 +1,16 @@
 package com.laxcen.service;
 
-public class ContactService {
+import com.laxcen.common.Menu;
 
+public class ContactService implements BasicService {
+	
+	@Override
 	public int getMenuId(){
-		return 6;
+		return Menu.CONTACTUS.ordinal();
+	}
+	
+	@Override
+	public String getServiceName(){
+		return Menu.CONTACTUS.name();
 	}
 }

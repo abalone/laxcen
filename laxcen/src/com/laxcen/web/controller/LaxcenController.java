@@ -3,6 +3,9 @@
  */
 package com.laxcen.web.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -22,7 +25,10 @@ public class LaxcenController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
-		return new ModelAndView("index","menuId",laxcenService.getMenuId());
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("menuId", laxcenService.getMenuId());
+		model.put("menu", laxcenService.getServiceName());
+		return new ModelAndView("index",model);
 	}
 
 	public void setLaxcenService(LaxcenService laxcenService) {

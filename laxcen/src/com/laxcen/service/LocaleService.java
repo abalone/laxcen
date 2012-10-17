@@ -12,12 +12,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 import com.google.common.collect.ImmutableMap;
+import com.laxcen.common.Menu;
 
 /**
  * @author abalone
  * 
  */
-public class LocaleService {
+public class LocaleService implements BasicService{
 	
 	final static Logger logger = LoggerFactory.getLogger(LocaleService.class);
 	
@@ -32,5 +33,17 @@ public class LocaleService {
 					siteLanguagePickerMap.get(locale.getLanguage()+"_"+locale.getCountry()));
 		}
 		return "";
+	}
+
+	@Override
+	public int getMenuId() {
+		// TODO Auto-generated method stub
+		return Menu.EMPTY.ordinal();
+	}
+
+	@Override
+	public String getServiceName() {
+		// TODO Auto-generated method stub
+		return "Locale Service";
 	}
 }

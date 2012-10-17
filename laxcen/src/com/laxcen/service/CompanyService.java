@@ -1,8 +1,16 @@
 package com.laxcen.service;
 
-public class CompanyService {
+import com.laxcen.common.Menu;
 
+public class CompanyService implements BasicService{
+	
+	@Override
 	public int getMenuId(){
-		return 2;
+		return Menu.COMPANY.ordinal();
+	}
+	
+	@Override
+	public String getServiceName(){
+		return Menu.COMPANY.name();
 	}
 }

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/laxcen.css"/>
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/laxcen.js"></script>
-<title>Laxcen</title>
+<title><%=(String)request.getAttribute("menu") %></title>
 </head>
 <body>
 <div class="frame borderline">
