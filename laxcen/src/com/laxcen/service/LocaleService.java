@@ -27,23 +27,19 @@ public class LocaleService implements BasicService{
 	public String getLocaleString(HttpServletRequest request) {
 		Locale locale = RequestContextUtils.getLocaleResolver(request)
 				.resolveLocale(request);
-		logger.warn("Get Locale String: {}_{}",locale.getLanguage(), locale.getCountry());
-		if (locale != null) {
-			return String.format("?%s=%s", "siteLanguage",
-					siteLanguagePickerMap.get(locale.getLanguage()+"_"+locale.getCountry()));
-		}
-		return "";
+		logger.info("Get Locale String: {}_{}",locale.getLanguage(), locale.getCountry());	
+		return String.format("?%s=%s", "siteLanguage",
+				siteLanguagePickerMap.get(locale.getLanguage()+"_"+locale.getCountry()));
+		
 	}
 
 	@Override
 	public int getMenuId() {
-		// TODO Auto-generated method stub
 		return Menu.EMPTY.ordinal();
 	}
 
 	@Override
 	public String getServiceName() {
-		// TODO Auto-generated method stub
 		return "Locale Service";
 	}
 }

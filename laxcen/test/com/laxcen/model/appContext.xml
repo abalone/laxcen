@@ -4,17 +4,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:com/laxcen/config/db.properties"></property>
+		<property name="location" value="classpath:com/laxcen/model/mysql-test.properties"></property>
 	</bean>
-    
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="${db.driver}"></property>
         <property name="url" value="${db.url}"></property>
         <property name="username" value="${db.username}"></property>
         <property name="password" value="${db.password}"></property>
     </bean>
     
-    <bean id="localSessionFactoryBean" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	<bean id="localSessionFactoryBean" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 	    <property name="dataSource" ref="dataSource"/>
 	    <property name="mappingResources">
 	      <list>
@@ -30,4 +30,5 @@
 	      </value>
 	    </property>
 	</bean>
+
 </beans>
