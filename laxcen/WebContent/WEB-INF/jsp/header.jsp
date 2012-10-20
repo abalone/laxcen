@@ -16,12 +16,12 @@
 				<td width="80%">
 					<div class="menubar">
 						<ul>
-							<a href="laxcen.do"><li><spring:message code="menu1"></spring:message></li></a>
-							<a href="company.do"><li><spring:message code="menu2"></spring:message></li></a>
-							<a href="media.do"><li><spring:message code="menu3"></spring:message></li></a>
-							<a href="products.do"><li><spring:message code="menu4"></spring:message></li></a>
-							<a href="solutions.do"><li><spring:message code="menu5"></spring:message></li></a>
-							<a href="contactus.do"><li><spring:message code="menu6"></spring:message></li></a>
+							<li><a href="laxcen.do"><spring:message code="menu1"></spring:message></a></li>
+							<li><a href="company.do"><spring:message code="menu2"></spring:message></a></li>
+							<li><a href="media.do"><spring:message code="menu3"></spring:message></a></li>
+							<li><a href="products.do"><spring:message code="menu4"></spring:message></a></li>
+							<li><a href="solutions.do"><spring:message code="menu5"></spring:message></a></li>
+							<li class="last"><a href="contactus.do"><spring:message code="menu6"></spring:message></a></li>
 						</ul>
 					</div>
 				</td>

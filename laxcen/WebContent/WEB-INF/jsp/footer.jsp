@@ -23,9 +23,9 @@
 		 	</td>
 		 	<td width="30%">
 		 		<div class="left">
-		 			<spring:message code="contact.email"></spring:message><a href="mailto:<spring:message code='contact.email.address'></spring:message>?subject=About Laxcen"><spring:message code="contact.email.address"></spring:message></a><br>
-		 			<spring:message code="HK"></spring:message>: <a><spring:message code="contact.phone.hk"></spring:message></a><br>
-		 			<spring:message code="NB"></spring:message>: <a><spring:message code="contact.phone.nb"></spring:message></a><br>
+		 			<img src="img/EnvelopeHS.png" height="14px"></img> <spring:message code="contact.email"></spring:message><a href="mailto:<spring:message code='contact.email.address'></spring:message>?subject=About Laxcen"><spring:message code="contact.email.address"></spring:message></a><br>
+		 			<img src="img/Call.png" height="14px"></img> <spring:message code="HK"> </spring:message>  <a><spring:message code="contact.phone.hk"></spring:message></a><br>
+		 			<img src="img/Call.png" height="14px"></img> <spring:message code="NB"> </spring:message> <a><spring:message code="contact.phone.nb"></spring:message></a><br>
 		 		</div>
 		 	</td>
 		 </tr>
