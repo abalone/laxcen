@@ -20,8 +20,6 @@ public class ProductsController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("menuId", productsService.getMenuId());
-		model.put("menu", productsService.getServiceName());
 		return new ModelAndView("products",model);
 	}
 

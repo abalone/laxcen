@@ -19,8 +19,6 @@ public class CompanyController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("menuId", companyService.getMenuId());
-		model.put("menu", companyService.getServiceName());
 		return new ModelAndView("company",model);
 	}
 

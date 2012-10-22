@@ -20,8 +20,6 @@ public class ContactController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("menuId", contactService.getMenuId());
-		model.put("menu", contactService.getServiceName());
 		return new ModelAndView("contactus",model);
 	}
 

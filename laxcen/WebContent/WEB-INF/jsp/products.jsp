@@ -9,12 +9,14 @@
 <link rel="stylesheet" href="css/laxcen.css"/>
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/laxcen.js"></script>
-<title><%=(String)request.getAttribute("menu") %></title>
+<title><spring:message code="menu4"></spring:message></title>
 </head>
 <body>
 <div class="frame borderline">
 	<div class="head sitefont">
-		<jsp:include page="header.jsp"></jsp:include>
+		<jsp:include page="header.jsp">
+			<jsp:param name="menuId" value="4"/>
+		</jsp:include>
 	</div>
 	<div class="mainbody">
 		<div class="subdiv borderline">

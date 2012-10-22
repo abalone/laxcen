@@ -26,8 +26,6 @@ public class LaxcenController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("menuId", laxcenService.getMenuId());
-		model.put("menu", laxcenService.getServiceName());
 		return new ModelAndView("index",model);
 	}
 

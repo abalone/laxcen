@@ -19,8 +19,6 @@ public class MediaController implements Controller {
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("menuId", mediaService.getMenuId());
-		model.put("menu", mediaService.getServiceName());
 		return new ModelAndView("media",model);
 	}
 
