@@ -29,29 +29,38 @@ a{
 
 .menubar ul{
 	list-style:none;
-	background: url('../img/blueSheen.jpg') repeat-x scroll center; border:0px solid #FFFFFF;
 	padding: 10px 10px 10px 0px;
 	float:left;
+	margin:0px;
 }
 
 .menubar ul li{
-	display:inline; padding: 0px 10px 0px 10px; border-right:1px solid #0D5995;
+	display:inline; padding: 8px 10px 8px 10px;
+	margin-left: -4px;
+	background: url('../img/blueSheen.jpg') repeat-x scroll center; 
+	border-right:1px dotted #0D5995;
 }
 
 .menubar ul li.menuhighlight{
-	color:#CCCCCC;
+	background: url('../img/lightBlueSheen.jpg') repeat-x scroll center;
+	cursor:pointer;
 }
 
 .menubar ul li.on{
-	color:#CCCCCC;
+	background: url('../img/lightBlueSheen.jpg') repeat-x scroll center; 
+	cursor:pointer;
+}
+
+.menubar ul li.menuhighlight a{
+	color:#D7E9F4;
+}
+
+.menubar ul li.on a{
+	color:#D7E9F4;
 }
 
 .menubar ul li.last{
 	border-right: 0px;
-}
-
-
-.menubar ul li a.menuhighlight{
 }
 
 .highlight{
@@ -96,7 +105,6 @@ a{
 .lang a {
 	text-decoration:none;
 	color:#BBBBBB;
-	padding-bottom:2px;
 }
 
 .poster{
@@ -176,7 +184,7 @@ a{
 	font: 11px Tahoma;
 }
 
-.more_dtail a{
+.more_detail a{
 	text-decoration: none;
 	color: #888888;
 }
@@ -213,22 +221,14 @@ a{
 
 .subdiv {
 	padding:10px;
-	background-color: #D5D5D5;
+	background-color: #FFFFFF;
 }
-
-.submenu{
-	background-color:#EEEEEE;
-	height:250px;
-	margin-right:5px;
-	border:2px solid #FFFFFF;
-	padding:5px;
-}	
 
 .subcontent{
 	background-color:#FFFFFF;
 	height:413px;
-	margin-left:5px;
-	border:2px solid #EEEEEE;
+	margin-left:110px;
+	border-top:2px solid #EEEEEE;
 	padding:5px;
 }
 
@@ -241,20 +241,19 @@ a{
 	color:#5DB0E6; 
 }
 
-.submenubar{
-	padding:0px;
-	margin:5px;
+.submenubar ul{
+	margin: 0px 0px 0px -40px;
+	float:left;
 }
-.submenubar li{
+
+.submenubar ul li{
 	list-style:none;
-	width:100%;
-	display:block;
 	background-color:#666666;
 	height:auto;
-	padding:15px 0px 15px 0px;
-	margin-bottom:10px;
-	border-right:2px solid #AAAAAA;
-	border-bottom:2px solid #AAAAAA;
+	padding:5px 5px 5px 10px;
+	border-bottom:1px solid #AAAAAA;
+	text-align:left;
+	width:90px;
 }
 
 .submenubar a{
@@ -262,14 +261,28 @@ a{
 }
 
 .submenubar li.submenuhighlight{
-	background-color: #5DB0E6;
-	color:#666666;
+	background-color: #126AA9;
+	color:#FFFFFF;
 	border-right:2px solid #888888;
 	border-bottom:2px solid #888888;
+	cursor:pointer;
 }
 
-.submenubar a.submenuhighlight{
-	background-color: #5DB0E6;
-	color:#666666;
+.submenubar li.submenuhighlight a{
+	background-color: #126AA9;
+	color:#FFFFFF;
+}
+
+.submenubar li.on{
+	background-color: #126AA9;
+	color:#FFFFFF;
+	border-right:2px solid #888888;
+	border-bottom:2px solid #888888;
+	cursor:pointer;
+}
+
+.submenubar li.on a{
+	background-color: #126AA9;
+	color:#FFFFFF;
 }
 

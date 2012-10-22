@@ -17,5 +17,6 @@ $(document).ready(function(){
 		$(this).hover(function(){$(this).addClass("highlight");});
 		$(this).mouseleave(function(){$(this).removeClass("highlight");});
 	});
+
 		
 });

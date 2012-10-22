@@ -11,12 +11,11 @@
 <script src="js/laxcen.js"></script>
 <title><spring:message code="menu1"></spring:message></title>
 </head>
+<c:set var="menuId" value="1" scope="request"/>
 <body>
 <div class="frame borderline">
 	<div class="head sitefont">
-		<jsp:include page="header.jsp">
-			<jsp:param name="menuId" value="1"/>
-		</jsp:include>
+		<jsp:include page="header.jsp"></jsp:include>
 	</div>
 	<div class="poster">
 		<jsp:include page="poster.jsp"></jsp:include>

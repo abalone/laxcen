@@ -12,15 +12,16 @@
 <title><spring:message code="menu6"></spring:message></title>
 </head>
 <body>
+<c:set var="menuId" value="6" scope="request"/>
 <div class="frame borderline">
 	<div class="head sitefont">
-		<jsp:include page="header.jsp">
-			<jsp:param name="menuId" value="6"/>
-		</jsp:include>
+		<jsp:include page="header.jsp"></jsp:include>
 	</div>
 	<div class="mainbody">
 		<div class="subdiv borderline">
-			<jsp:include page="subtab.jsp"></jsp:include>
+			<div class="subcontent">
+				<jsp:include page="subcontent.jsp"></jsp:include>
+			</div>
 		</div>
 	</div>
 	<div class="tail sitefont">

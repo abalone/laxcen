@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -12,15 +13,22 @@
 <title><spring:message code="menu2"></spring:message></title>
 </head>
 <body>
+<c:set var="menuId" value="2" scope="request"/>
+<c:set var="submenuNameList" scope="request"><spring:message code="menu2.1"></spring:message>,<spring:message code="menu2.2"></spring:message>,<spring:message code="menu2.3"></spring:message>,<spring:message code="menu2.4"></spring:message></c:set>
+<c:set var="submenuList" value="${fn:split(submenuNameList, ',')}" scope="request"/>
+
 <div class="frame borderline">
 	<div class="head sitefont">
-		<jsp:include page="header.jsp">
-			<jsp:param name="menuId" value="2"/>
-		</jsp:include>
+		<jsp:include page="header.jsp"></jsp:include>
 	</div>
 	<div class="mainbody">
 		<div class="subdiv borderline">
-			<jsp:include page="subtab.jsp"></jsp:include>
+		<div class="submenubar sitefont">
+			<jsp:include page="submenu.jsp"></jsp:include>
+		</div>
+		<div class="subcontent">
+			<jsp:include page="subcontent.jsp"></jsp:include>
+		</div>
 		</div>
 	</div>
 	<div class="tail sitefont">

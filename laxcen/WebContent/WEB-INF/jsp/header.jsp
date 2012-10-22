@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script>var menuId = <%= request.getParameter("menuId")%>;</script>
+<script>var menuId = <%=(String)request.getAttribute("menuId")%>;</script>
+<script>var submenuId = <%=request.getParameter("subM")%>;</script>
 <script src="js/menu.js"></script>
 <title></title>
 </head>
