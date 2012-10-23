@@ -14,12 +14,14 @@
         <property name="password" value="${db.password}"></property>
     </bean>
     
-    <bean id="localSessionFactoryBean" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 	    <property name="dataSource" ref="dataSource"/>
 	    <property name="mappingResources">
 	      <list>
 	        <value>com/laxcen/model/faq.hbm.xml</value>
 	        <value>com/laxcen/model/faqGroup.hbm.xml</value>
+	        <value>com/laxcen/model/article.hbm.xml</value>
+	        <value>com/laxcen/model/image.hbm.xml</value>
 	      </list>
 	    </property>
 	    <property name="hibernateProperties">
@@ -29,7 +31,5 @@
 	        hibernate.current_session_context_class=thread
 	      </value>
 	    </property>
-	</bean>
-	
-    
+	</bean>    
 </beans>

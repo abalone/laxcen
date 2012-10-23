@@ -20,9 +20,16 @@ public class MediaDao {
 
 	@Autowired
 	private SessionFactory sessionFactory;
-
+	
+	public MediaDao(){
+		System.out.println("lalala");
+	}
+	
 	public List<Article> retrieveAllArticles() {
 
+		if(sessionFactory==null){
+			System.out.println("null!!!!");
+		}
 		Session session = sessionFactory.getCurrentSession();
 		Transaction tx = session.beginTransaction();
 
@@ -32,4 +39,16 @@ public class MediaDao {
 		return articles;
 
 	}
+
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		System.out.println("do set Session Factory");
+		System.out.println("set to " + sessionFactory.toString());
+		this.sessionFactory = sessionFactory;
+	}
+	
+	
 }
