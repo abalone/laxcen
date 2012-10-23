@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:ivy="antlib:org.apache.ivy.ant" name="laxcen" default="resolve">
 	<property file="build.properties"></property>
+	<property name="app.dir" value="."/>
+	<property name="web.dir" value="${app.dir}/WebContent"/>
 	
 	<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant"></taskdef>
 	<target name="default">
@@ -19,5 +21,11 @@
     		<fileset dir="${ivy.lib.dir}" includes="el-api-*.jar" defaultexcludes="false"/>
     		<fileset dir="${ivy.lib.dir}" includes="jsp-api-*.jar" defaultexcludes="false"/>
   		</delete>
+	</target>
+	
+	<target name="build war" description="build war" depends="resolve">
+	    <war warfile="laxcen.war" webxml="${web.dir}/WEB-INF/web.xml">
+	        <fileset dir="${web.dir}"/>
+	    </war>
 	</target>
 </project>
