@@ -26,10 +26,6 @@ public class MediaDao {
 	}
 	
 	public List<Article> retrieveAllArticles() {
-
-		if(sessionFactory==null){
-			System.out.println("null!!!!");
-		}
 		Session session = sessionFactory.getCurrentSession();
 		Transaction tx = session.beginTransaction();
 
@@ -45,8 +41,6 @@ public class MediaDao {
 	}
 
 	public void setSessionFactory(SessionFactory sessionFactory) {
-		System.out.println("do set Session Factory");
-		System.out.println("set to " + sessionFactory.toString());
 		this.sessionFactory = sessionFactory;
 	}
 	
