@@ -34,7 +34,12 @@
 	<bean id="laxcenService" class="com.laxcen.service.LaxcenService" />
 	<bean id="localeService" class="com.laxcen.service.LocaleService" />
 	<bean id="companyService" class="com.laxcen.service.CompanyService"/>
-	<bean id="mediaService" class="com.laxcen.service.MediaService"/>
+	
+	<bean id="mediaDao" class="com.laxcen.dao.MediaDao"/>
+	<bean id="mediaService" class="com.laxcen.service.MediaService">
+	    <property name="mediaDao" ref="mediaDao"></property>
+	</bean>
+	
 	<bean id="productsService" class="com.laxcen.service.ProductsService"/>
 	<bean id="solutionsService" class="com.laxcen.service.SolutionsService"/>
 	<bean id="contactService" class="com.laxcen.service.ContactService"/>
