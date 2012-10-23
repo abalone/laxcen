@@ -20,6 +20,8 @@
 	      <list>
 	        <value>com/laxcen/model/faq.hbm.xml</value>
 	        <value>com/laxcen/model/faqGroup.hbm.xml</value>
+	        <value>com/laxcen/model/image.hbm.xml</value>
+	        <value>com/laxcen/model/article.hbm.xml</value>
 	      </list>
 	    </property>
 	    <property name="hibernateProperties">
