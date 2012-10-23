@@ -1,1 +1,3 @@
-contact us content
+<div class="contactus left underConstruction">
+	This page is under construction...
+</div>

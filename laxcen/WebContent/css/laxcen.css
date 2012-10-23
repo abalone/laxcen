@@ -15,6 +15,11 @@ a{
 	color:#FFFFFF;
 }
 
+h2{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
 .frame{
 	width: 980px; height: 100%; align:center; padding: 15px; margin:auto; background: url('../img/dark-grey-tile.png');
 }
@@ -70,7 +75,7 @@ a{
 }
 
 .borderline{
-	border:3px solid #BBBBBB; 
+	border:3px outset #BBBBBB; 
 }
 
 .borderright{
@@ -91,6 +96,7 @@ a{
 
 .sitefont{
 	color:#DDDDDD;
+	text-shadow:1px 1px #888888;
 	font-weight:bold;
 }
 
@@ -203,6 +209,7 @@ a{
 	color:#5DB0E6;
 	margin-bottom:2px;
 	font: 11px Tahoma;
+	text-shadow:0px 0px;
 	font-weight:bold;
 }
 
@@ -226,7 +233,7 @@ a{
 
 .subcontent{
 	background-color:#FFFFFF;
-	height:413px;
+	height:auto;
 	margin-left:110px;
 	border-top:2px solid #EEEEEE;
 	padding:5px;
@@ -286,3 +293,68 @@ a{
 	color:#FFFFFF;
 }
 
+.aboutLaxcen{
+	background: url('../img/aboutLaxcen.png') no-repeat;
+	padding-left: 250px;
+	padding-bottom:25px;
+	margin:0px 10px 0px 10px;
+	border-bottom:1px dotted #888888;
+}
+
+.sections{
+	margin:auto;
+	height:100px;
+	width:80%;
+}
+
+.section{
+	display:inline;
+	float: left;
+	width:auto;
+	margin-top:10px;
+	padding:10px 15px 10px 15px;
+	border-right: 1px dotted #888888;
+}
+
+.last{
+	border-right: 0px;
+}
+
+.management, .partners, .jobs{
+	padding-left:20px;
+}
+
+.others{
+	width:80%;
+	margin: auto;
+	margin-top: 20px;
+	border-left:2px outset #888888;
+	padding: 0px 0px 0px 15px;
+}
+
+.people{
+	height:50px;
+	marin-right:250px;
+	width:80%;
+}
+
+.person1{
+	background: url('../img/person.png') no-repeat right;
+}
+
+.person2{
+	background: url('../img/person.png') no-repeat right;
+}
+
+.person3{
+	background: url('../img/person.png') no-repeat right;
+}
+
+.channels{
+	padding-top:15px;
+	border-top: 1px dotted #888888;
+}
+
+.underConstruction{
+	height:150px;
+}
