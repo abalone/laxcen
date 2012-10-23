@@ -27,7 +27,21 @@
 			<jsp:include page="submenu.jsp"></jsp:include>
 		</div>
 		<div class="subcontent">
-			<jsp:include page="subcontent.jsp"></jsp:include>
+		<% String submenuId = request.getParameter("subM");
+			if(submenuId == null){
+				submenuId = "1";
+			}
+			
+			if(submenuId.equals("1")){
+		%>
+			<jsp:include page="company/aboutLaxcen.jsp"></jsp:include>
+		<%}else if(submenuId.equals("2")){ %>
+			<jsp:include page="company/management.jsp"></jsp:include>
+		<%}else if(submenuId.equals("3")){ %>
+			<jsp:include page="company/partners.jsp"></jsp:include>
+		<%}else if(submenuId.equals("4")){ %>
+			<jsp:include page="company/jobs.jsp"></jsp:include>
+		<%}%>
 		</div>
 		</div>
 	</div>

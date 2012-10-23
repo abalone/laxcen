@@ -26,7 +26,19 @@
 				<jsp:include page="submenu.jsp"></jsp:include>
 			</div>
 			<div class="subcontent">
-				<jsp:include page="subcontent.jsp"></jsp:include>
+				<% String submenuId = request.getParameter("subM");
+					if(submenuId == null){
+						submenuId = "1";
+					}
+			
+					if(submenuId.equals("1")){
+				%>
+					<jsp:include page="media/blog.jsp"></jsp:include>
+				<%}else if(submenuId.equals("2")){ %>
+					<jsp:include page="media/press.jsp"></jsp:include>
+				<%}else if(submenuId.equals("3")){ %>
+					<jsp:include page="media/news.jsp"></jsp:include>
+				<%}%>
 			</div>
 		</div>
 	</div>

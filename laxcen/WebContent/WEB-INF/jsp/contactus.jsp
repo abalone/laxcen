@@ -20,7 +20,7 @@
 	<div class="mainbody">
 		<div class="subdiv borderline">
 			<div class="subcontent">
-				<jsp:include page="subcontent.jsp"></jsp:include>
+				<jsp:include page="contactus/content.jsp"></jsp:include>
 			</div>
 		</div>
 	</div>
