@@ -1,14 +1,65 @@
-/*CREATE TABLE lx_contentfragment (
-	id INT,
+DROP TABLE IF EXISTS lx_contentfragment_ml;
+DROP TABLE IF EXISTS lx_contentfragment;
+DROP TABLE IF EXISTS lx_article_ml;
+DROP TABLE IF EXISTS lx_article;
+DROP TABLE IF EXISTS lx_image_ml;
+DROP TABLE IF EXISTS lx_image;
+
+CREATE TABLE lx_contentfragment (
+	id INT(11) NOT NULL AUTO_INCREMENT,
 	contentKey VARCHAR(64),
-	contentValue TEXT;
+	contentValue TEXT,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE lx_contentfragment_ml (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	contentValue TEXT,
+	contentfragment_id INT(11),
+	locale VARCHAR(16),
+	CONSTRAINT lx_contentfragment_ml_contentfragment FOREIGN KEY (contentfragment_id) REFERENCES lx_contentfragment(id),
+	PRIMARY KEY(id)
 );
 
 CREATE TABLE lx_article (
-	id INT,
-	
-); 
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	title VARCHAR(256),
+	summary VARCHAR(1024),
+	content TEXT,
+	image_id INT(11),
+	PRIMARY KEY(id)
+);
 
+CREATE TABLE lx_article_ml (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	title VARCHAR(256),
+	summary VARCHAR(1024),
+	content TEXT,
+	article_id INT(11),	
+	locale VARCHAR(16),
+	CONSTRAINT lx_article_ml_article FOREIGN KEY (article_id) REFERENCES lx_article(id),
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE lx_image (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	uri VARCHAR(256),
+	title VARCHAR(512),
+	width SMALLINT,
+	height SMALLINT,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE lx_image_ml (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	title VARCHAR(512),
+	image_id INT(11),
+	locale VARCHAR(16),
+	CONSTRAINT lx_image_ml_image FOREIGN KEY (image_id) REFERENCES lx_image(id),
+	PRIMARY KEY(id)
+);
+
+/*
 CREATE TABLE lx_product (
 	id INT,
 	name VARCHAR(64),
