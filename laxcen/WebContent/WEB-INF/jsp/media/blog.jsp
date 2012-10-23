@@ -1,1 +1,3 @@
-blog
+<div class="blog left underConstruction">
+	This page is under construction...
+</div>

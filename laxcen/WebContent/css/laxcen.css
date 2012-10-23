@@ -169,15 +169,19 @@ h2{
 }
 
 .prod_img1{
-	background: url('../img/product.jpg') no-repeat; height: 84px;
+	background: url('../img/uhf.jpg') no-repeat;
+	background-size: 90px 90px; 
+	height: 84px;
 }
 
 .prod_img2{
-	background: url('../img/product.jpg') no-repeat; height: 84px;
+	background: url('../img/hf.jpg') no-repeat; height: 84px;
+	background-size: 90px 90px; 
 }
 
 .prod_img3{
-	background: url('../img/product.jpg') no-repeat; height: 84px;
+	background: url('../img/hf.jpg') no-repeat; height: 84px;
+	background-size: 90px 90px; 
 }
 
 .prod_title{
@@ -356,5 +360,5 @@ h2{
 }
 
 .underConstruction{
-	height:150px;
+	height:200px;
 }

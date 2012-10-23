@@ -26,17 +26,32 @@
 				<tr>
 					<td width="33%">
 						<div class="product">
-							<jsp:include page="top_product.jsp"></jsp:include>
+							<jsp:include page="top_product.jsp">
+								<jsp:param name="title" value="UFH Inlay"></jsp:param>
+								<jsp:param name="desp" value="We offer a wide range of standard reference designs & custom inlay designs"></jsp:param>
+								<jsp:param name="url" value="products.do?subM=1"></jsp:param>
+								<jsp:param name="class" value="prod_img1"></jsp:param>
+							</jsp:include>
 						</div>
 					</td>
 					<td width="33%">
 						<div class="product">
-							<jsp:include page="top_product.jsp"></jsp:include>
+							<jsp:include page="top_product.jsp">
+								<jsp:param name="title" value="HF Inlay"></jsp:param>
+								<jsp:param name="desp" value="We has a full selection of HF Inlays for typical applications"></jsp:param>
+								<jsp:param name="url" value="products.do?subM=2"></jsp:param>
+								<jsp:param name="class" value="prod_img2"></jsp:param>
+							</jsp:include>
 						</div>
 					</td>
 					<td width="33%">
 						<div class="product">
-							<jsp:include page="top_product.jsp"></jsp:include>
+							<jsp:include page="top_product.jsp">
+								<jsp:param name="title" value="NFC Inlay"></jsp:param>
+								<jsp:param name="desp" value="View our NFC selections for your solutions"></jsp:param>
+								<jsp:param name="url" value="products.do?subM=3"></jsp:param>
+								<jsp:param name="class" value="prod_img3"></jsp:param>
+							</jsp:include>
 						</div>
 					</td>
 				</tr>

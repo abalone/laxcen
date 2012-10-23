@@ -9,9 +9,9 @@
 <title></title>
 </head>
 <body>
-<div class="prod_img1">
-	<div class="prod_title">Prod 1<br>prod1 is our product which has feature 1 and feature 2.</div>
-	<div class="more_detail right"><a href="#"><spring:message code="more"></spring:message></a></div>
+<div class=<%=request.getParameter("class")%>>
+	<div class="prod_title"><b><%=request.getParameter("title")%></b><br><%=request.getParameter("desp")%></div>
+	<div class="more_detail right"><a href=<%=request.getParameter("url")%>><spring:message code="more"></spring:message></a></div>
 </div>
 </body>
 </html>

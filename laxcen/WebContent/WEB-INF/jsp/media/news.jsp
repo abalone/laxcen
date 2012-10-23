@@ -1,1 +1,3 @@
-news
+<div class="new left underConstruction">
+	This page is under construction...
+</div>
