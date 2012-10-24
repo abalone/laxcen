@@ -18,6 +18,7 @@ a{
 h2{
 	margin-top:2px;
 	margin-bottom:2px;
+	opacity:1;
 }
 
 .frame{
@@ -361,4 +362,23 @@ h2{
 
 .underConstruction{
 	height:200px;
+}
+
+.blog_body{
+	margin-top:15px;
+	padding-left:10px;
+	border:1px outset #888888;
+	background: url('../img/bg_pattern.gif') repeat-x 0px -75px transparent;
+	opacity:0.7;
+}
+
+.blog_simple{
+	cursor:pointer;
+}
+
+.blog_simple p{
+	margin:0px;
+}
+
+.blog_content{
 }
